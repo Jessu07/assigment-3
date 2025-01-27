@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <t<script>>
+    <title>Warning Pop-up</title>
+    <script>
         window.onload = function() {
             alert("Warning: Your account has been compromised!");
         };
-    </script>itle>Warning Pop-up</title>
-    <script>
-        function showAlert(event) {
-            event.preventDefault(); // Prevent the form from submitting
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            alert(`Username: ${username}\nPassword: ${password}`);
-        }
     </script>
 </head>
 <body>
-    <h1>Login Form</h1>
+     <h1>Login Form</h1>
     <form onsubmit="showAlert(event)">
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" required><br><br>
